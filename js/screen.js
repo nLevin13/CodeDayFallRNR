@@ -1,4 +1,4 @@
-var air_console = new AirConsole();
+var air_console = new AirConsole({"orientation": "portrait"});
 
     // Listen for messages from other devices
     air_console.onMessage = function(from, data) {
