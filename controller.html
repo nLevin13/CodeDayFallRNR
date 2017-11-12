@@ -1,21 +1,54 @@
 <DOCTYPE! html>
-<html>
+  <html>
+
   <body>
     <h1>Controller</h1>
-    
+
     <!--Make your links here-->
     <p>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <a href="google.com">
-      <img src="rightarrow.png" data-rotate="90">
-    <a href="google.com">
-      <img src="rightarrow.png">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="270" width="150">
       </a>
+      <p> </p>
+      <a href="google.com">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="180" width="150">
+      </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="google.com">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" width="150">
+      </a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="google.com">
+        <img src="https://github.com/nLevin13/CodeDayFallRNR/raw/gh-pages/placebutton.png" width="300">
+      </a>
+      <p>
+
+      </p>
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="google.com">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="90" width="150">
+
+      </a>
+
     </p>
-    
-    
-    
+
+
   </body>
-  
+  <script type="jquery-3.2.1.min.js">
+$("img").each(function() {
+  var deg = $(this).data("rotate") || 0;
+  var rotate = "rotate(" + deg + "deg)";
+  $(this).css({
+    "-webkit-transform": rotate,
+    "-moz-transform": rotate,
+    "-o-transform": rotate,
+    "-ms-transform": rotate,
+    transform: rotate
+  });
+});
+</script>
   <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
   <script src="js/controller.js"></script>
-</html>
+
+  </html>
