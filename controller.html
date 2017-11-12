@@ -1,20 +1,9 @@
 <DOCTYPE! html>
 <html>
-<script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
-<img src="thingie.png" style="width:100px;height:200px;">
-<script type="text/javascript">
-    var air_console = new AirConsole();
-
-    // Send a message to the screen
-    air_console.message(AirConsole.SCREEN, "How are you?");
-
-    // Listen for messages
-    air_console.onMessage = function(from, data) {
-
-      // Show message on device screen
-      var info = document.createElement('DIV');
-      info.innerHTML = data;
-      document.body.appendChild(info);
-    };
-    </script>
+  <body>
+    <h1>Controller</h1>
+  </body>
+  
+  <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+  <script src="js/controller.js"></script>
 </html>

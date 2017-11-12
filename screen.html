@@ -1,24 +1,9 @@
 <DOCTYPE! html>
 <html>
-<script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
-<img src="thingie.png" style="width:100px;height:200px;">
-<audio controls autoplay loop>
-<source src="viper.mp3" type="audio/mp3">
-<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-</audio>
-<script type="text/javascript">
-    var air_console = new AirConsole();
-
-    // Listen for messages from other devices
-    air_console.onMessage = function(from, data) {
-
-      // We receive a message -> Send message back to the device
-      air_console.message(from, "Full of pixels!");
-
-      // Show message on device screen
-      var info = document.createElement('DIV');
-      info.innerHTML = data;
-      document.body.appendChild(info);
-    };
-    </script>
+  <body>
+    <h1>Screen</h1>
+  </body>
+  
+  <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+  <script src="js/screen.js"></script>
 </html>
