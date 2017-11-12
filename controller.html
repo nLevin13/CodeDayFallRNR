@@ -1,33 +1,35 @@
 <DOCTYPE! html>
   <html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+</head>
   <body>
-    <h1>Controller</h1>
-
     <!--Make your links here-->
     <p>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="google.com">
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="270" width="150">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="#!" onclick="up()">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" class="rotate270" width="90">
       </a>
-      <p> </p>
-      <a href="google.com">
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="180" width="150">
+      <p></p>
+      <a href="#!" onclick="left()">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" class="rotate180" width="90">
       </a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="google.com">
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" width="150">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#!" onclick="right()">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" width="90">
       </a>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="google.com">
-        <img src="https://github.com/nLevin13/CodeDayFallRNR/raw/gh-pages/placebutton.png" width="300">
+      &nbsp; &nbsp;
+      <a href="#!" onclick="place()">
+        <img src="https://github.com/nLevin13/CodeDayFallRNR/raw/gh-pages/placebutton.png" width="240">
       </a>
       <p>
 
       </p>
-      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="google.com">
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" data-rotate="90" width="150">
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#!" onclick="down()">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34-200.png" class="rotate90" width="90">
 
       </a>
 
@@ -35,20 +37,36 @@
 
 
   </body>
-  <script type="jquery-3.2.1.min.js">
-$("img").each(function() {
-  var deg = $(this).data("rotate") || 0;
-  var rotate = "rotate(" + deg + "deg)";
-  $(this).css({
-    "-webkit-transform": rotate,
-    "-moz-transform": rotate,
-    "-o-transform": rotate,
-    "-ms-transform": rotate,
-    transform: rotate
-  });
-});
-</script>
+<style>
+  .rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+    </style>
+    
+    <style>
+    .rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    }
+    </style>
+    <style>
+    .rotate270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    }
+    </style>
   <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
   <script src="js/controller.js"></script>
+  
 
   </html>
